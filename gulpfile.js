@@ -12,3 +12,9 @@ gulp.task("default", function () {
     gulp.src(['views/**/*']).pipe(gulp.dest('build/views'));
     gulp.src(['public/**/*']).pipe(gulp.dest('build/public'));
 });
+
+gulp.task("watch", function () {
+    gulp.watch(["**/*.ts", "!node_modules/**/*"], ["default"])
+    gulp.watch(['views/**/*'], ["default"])
+    gulp.watch(['public/**/*'], ["default"])
+});
