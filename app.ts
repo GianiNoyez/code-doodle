@@ -9,7 +9,7 @@ import { router as index }  from "./routes/index"
 import { router as users }  from "./routes/users"
 
 var app = express();
-// testing feature branch
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
